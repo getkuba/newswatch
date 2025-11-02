@@ -1,0 +1,40 @@
+{
+  "name": "ai-guardian-newswatch",
+  "version": "0.1.0",
+  "description": "AI Guardian: Real-Time Misinformation Monitor using OriginTrail and Polkadot",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "monitor": "ts-node src/index.ts monitor",
+    "check": "ts-node src/index.ts check"
+  },
+  "keywords": [
+    "misinformation",
+    "fact-checking",
+    "origintrail",
+    "polkadot",
+    "ai",
+    "nlp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot/api": "^10.11.2",
+    "@polkadot/keyring": "^12.6.2",
+    "@polkadot/util": "^12.6.2",
+    "@polkadot/util-crypto": "^12.6.2",
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "compromise": "^14.10.0",
+    "dotenv": "^16.3.1",
+    "rss-parser": "^3.13.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
